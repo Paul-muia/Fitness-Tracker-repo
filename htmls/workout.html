@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Workout - Beast Fitness Tracker</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="workout.html">Log Workout</a></li>
+                <li><a href="tracker.html">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="workout-log">
+            <h2>Log Your Workout</h2>
+            <form id="workout-form">
+                <label for="workout-type">Workout Type:</label>
+                <select id="workout-type" required>
+                    <option value="">Select Workout</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="strength">Strength Training</option>
+                    <option value="yoga">Yoga</option>
+                </select>
+
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" required min="1">
+
+                <label for="calories">Calories Burned:</label>
+                <input type="number" id="calories" required min="0">
+
+                <button type="submit">Log Workout</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FitnessTracker. Your fitness journey starts here!</p>
+    </footer>
+
+    <script src="../htmls/workout.html"></script>
+</body>
+</html>
